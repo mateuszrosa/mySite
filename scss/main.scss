@@ -4,3 +4,74 @@
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
 }
+
+html,
+body {
+    height: 100%;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 100px;
+    border-bottom: 1px solid black;
+    z-index: 2;
+
+    h2 {
+        line-height: 100px;
+        margin-left: 10px;
+    }
+
+    i {
+        font-size: 35px;
+        position: absolute;
+        top: 50%;
+        left: 95%;
+        transform: translate(-95%, -50%);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+.main {
+    height: 50%;
+
+    h1 {
+        font-size: 2em;
+        text-align-last: center;
+        padding-top: 80px;
+    }
+
+    img {
+        width: 50%;
+        height: 70%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    p {
+        padding: 1em 2em;
+    }
+}
+
+.about {
+    height: 70%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.projects {
+    height: 100%;
+    border-bottom: 3px solid black;
+}
+
+.contact {
+    height: 50%;
+}
