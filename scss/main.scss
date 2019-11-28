@@ -9,23 +9,30 @@ html,
 body {
     height: 100%;
     font-size: 16px;
+    background: #5cdb95;
 }
 
 header {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
     position: relative;
     height: 100px;
     border-bottom: 1px solid black;
     z-index: 2;
 
     h2 {
-        line-height: 100px;
+        line-height: 1;
         margin-left: 10px;
-        color: #FF851B;
-        width: 100%;
+        // color: #FF851B;
+        color: #05386b;
         display: block;
+        text-shadow: hoff voff blur #000;
+
+        @media (min-width: 768px) {
+            font-size: 2em;
+        }
     }
 
     i.fas.fa-bars {
@@ -34,6 +41,7 @@ header {
         top: 50%;
         left: 95%;
         transform: translate(-95%, -50%);
+        color: #05386b;
 
         @media (min-width: 768px) {
             display: none;
@@ -41,15 +49,7 @@ header {
     }
 
     nav {
-        width: 10%;
-
-        @media (min-width: 768px) {
-            width: 60%;
-        }
-
-        @media (min-width: 1440px) {
-            width: 50%;
-        }
+        color: #05386b;
 
         ul {
             display: flex;
@@ -66,6 +66,7 @@ header {
 
             li {
                 margin-left: 50px;
+                font-weight: bold;
 
                 &:first-of-type {
                     margin-left: 0;
@@ -78,6 +79,8 @@ header {
 
 .main {
     height: 50%;
+    // background-image: url("../images/snowsmall.jpg");
+    // background-size: contain;
 
     h1 {
         font-size: 2em;
