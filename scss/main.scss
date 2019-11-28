@@ -24,7 +24,7 @@ header {
 
     h2 {
         line-height: 1;
-        margin-left: 10px;
+        margin-left: 20px;
         // color: #FF851B;
         color: #05386b;
         display: block;
@@ -50,6 +50,7 @@ header {
 
     nav {
         color: #05386b;
+        margin-right: 20px;
 
         ul {
             display: flex;
@@ -79,25 +80,36 @@ header {
 
 .main {
     height: 50%;
-    // background-image: url("../images/snowsmall.jpg");
-    // background-size: contain;
+    position: relative;
 
-    h1 {
-        font-size: 2em;
-        text-align-last: center;
-        padding-top: 30px;
+    .container {
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px 5px;
+        border-radius: 5px;
+
+        h1 {
+            font-size: 2em;
+            text-align-last: center;
+            color: #edf5e1;
+        }
+
+        img {
+            width: 100px;
+            height: 50px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        p {
+            text-align-last: center;
+            color: #379683;
+        }
     }
 
-    // img {
-    //     width: 50%;
-    //     height: 70%;
-    //     display: block;
-    //     margin: 0 auto;
-    // }
-
-    p {
-        text-align-last: center;
-    }
 }
 
 .about {
