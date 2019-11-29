@@ -21,7 +21,8 @@ header {
     height: 100px;
     z-index: 2;
     background-color: #fff;
-    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 
     img {
         width: 80px;
