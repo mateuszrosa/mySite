@@ -18,16 +18,20 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    height: 100px;
     z-index: 2;
     background-color: #379683;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
+    flex-direction: column;
+
+    &.mobile {
+        flex-direction: column;
+    }
 
     img {
         width: 80px;
         height: 80px;
-        margin-left: 10px;
+        margin: 10px;
     }
 
     h2 {
@@ -58,39 +62,63 @@ header {
 
     nav {
         color: #5cdb95;
-        margin-right: 20px;
 
-        .show {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: 100%;
-            font-size: 1em;
-            line-height: 10px;
-        }
-
-        ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            height: 0;
-            overflow: hidden;
-            font-size: 2em;
-            line-height: 100px;
+        &.desktop {
+            display: none;
+            margin-right: 20px;
 
             @media (min-width: 768px) {
-                height: 100%;
+                display: none;
             }
 
-            li {
-                margin-left: 50px;
-                font-weight: bold;
+            ul {
+                display: flex;
+                list-style: none;
+                padding: 0;
+                height: 0;
+                overflow: hidden;
+                font-size: 2em;
+                line-height: 100px;
 
-                &:first-of-type {
-                    margin-left: 0;
+                @media (min-width: 768px) {
+                    height: 100%;
+                }
+
+                li {
+                    margin-left: 50px;
+                    font-weight: bold;
+
+                    &:first-of-type {
+                        margin-left: 0;
+                    }
                 }
             }
         }
+
+        &.mobile {
+            @media (min-width: 768px) {
+                display: none;
+            }
+
+            width: 100%;
+            background-color: #fff;
+
+            i {
+                display: none;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                li {
+                    width: 100%;
+                    border: 1px solid black;
+                }
+            }
+        }
+
     }
 }
 
