@@ -14,7 +14,6 @@ body {
 
 header {
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -24,6 +23,7 @@ header {
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
     overflow: hidden;
+    flex-wrap: wrap;
     // box-shadow: 0 0 65px 15px rgba(#000, 0.2);
 
     &.mobile {
@@ -36,26 +36,10 @@ header {
         margin: 10px;
     }
 
-    h2 {
-        line-height: 1;
-        margin-left: 20px;
-        // color: #FF851B;
-        color: #05386b;
-        display: block;
-        text-shadow: hoff voff blur #000;
-
-        @media (min-width: 768px) {
-            font-size: 2em;
-        }
-    }
-
     i.fas.fa-bars {
-        font-size: 35px;
-        position: absolute;
-        top: 50%;
-        left: 95%;
-        transform: translate(-95%, -50%);
+        font-size: 40px;
         color: #5cdb95;
+        margin-right: 10px;
 
         @media (min-width: 768px) {
             display: none;
@@ -96,44 +80,43 @@ header {
                 }
             }
         }
-    }
 
-    // &.mobile {
-    //     overflow: hidden;
+        &.mobile {
+            overflow: hidden;
 
-    //     @media (min-width: 768px) {
-    //         display: none;
-    //     }
+            @media (min-width: 768px) {
+                display: none;
+            }
 
-    //     width: 100%;
-    //     background-color: #fff;
-
-    //     i {
-    //         display: none;
-    //     }
-
-    ul {
-        height: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-
-        li {
-            display: block;
             width: 100%;
-            border-bottom: 1px solid black;
-            text-align: center;
-            font-size: 20px;
-            height: 40px;
-            line-height: 40px;
-            font-weight: bold;
+            background-color: #fff;
+
+            i {
+                display: none;
+            }
+
+            ul {
+                height: 0;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+
+                li {
+                    display: block;
+                    width: 100%;
+                    border-bottom: 1px solid black;
+                    text-align: center;
+                    font-size: 20px;
+                    height: 40px;
+                    line-height: 40px;
+                    font-weight: bold;
+                }
+            }
         }
+
     }
 }
-
-
-
 
 
 .main {
