@@ -21,7 +21,7 @@ header {
     background-color: #379683;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
-    // overflow: hidden;
+    overflow: hidden;
     flex-wrap: wrap;
     // box-shadow: 0 0 65px 15px rgba(#000, 0.2);
 
@@ -36,10 +36,40 @@ header {
     }
 
     .icon {
+        position: relative;
         width: 60px;
         height: 60px;
         border: 1px solid black;
         margin-right: 10px;
+
+        .hamburger {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 8px;
+            background-color: #5cdb95;
+
+            &::before,
+            &::after {
+                content: "";
+                background-color: #5cdb95;
+                width: 50px;
+                height: 8px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+
+            &::before {
+                transform: translate(-50%, -200%);
+            }
+
+            &::after {
+                transform: translate(-50%, 100%);
+            }
+        }
     }
 
     // a {
