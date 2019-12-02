@@ -38,10 +38,16 @@ header {
 
     .icon {
         position: relative;
-        width: 60px;
-        height: 60px;
-        border: 1px solid black;
+        width: 65px;
+        height: 65px;
+        border: none;
+        border-radius: 50%;
         margin-right: 10px;
+        z-index: 2;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, .5);
+        }
 
         .hamburger {
             position: absolute;
@@ -52,6 +58,7 @@ header {
             height: 8px;
             background-color: #5cdb95;
             z-index: 10;
+            cursor: pointer;
 
             &::before,
             &::after {
@@ -74,29 +81,6 @@ header {
         }
     }
 
-    // a {
-    //     text-decoration: none;
-    //     width: 55px;
-    //     height: 55px;
-    //     display: flex;
-    //     border: 0;
-    //     border-radius: 50%;
-
-    //     &:hover,
-    //     &:focus {
-    //         background-color: rgba(0, 0, 0, .5);
-    //     }
-
-    //     i.fas.fa-bars {
-    //         font-size: 40px;
-    //         color: #5cdb95;
-    //         margin: auto;
-
-    //         @media (min-width: 768px) {
-    //             display: none;
-    //         }
-    //     }
-    // }
     .show {
         left: 0;
     }
@@ -150,11 +134,6 @@ header {
                 display: none;
             }
 
-            i {
-                display: none;
-            }
-
-
             ul {
                 width: calc(100% - 70px);
                 height: 100%;
@@ -175,6 +154,7 @@ header {
 
                     &:hover {
                         background-color: rgba(0, 0, 0, 0.2);
+                        cursor: pointer;
                     }
                 }
             }
