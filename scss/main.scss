@@ -15,7 +15,7 @@ body {
 header {
     display: flex;
     width: 100%;
-    height: 20vh;
+    height: 15vh;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -33,7 +33,7 @@ header {
     img {
         width: 80px;
         height: 80px;
-        margin: 10px;
+        margin: 5px;
     }
 
     .icon {
@@ -42,7 +42,7 @@ header {
         height: 65px;
         border: none;
         border-radius: 50%;
-        margin-right: 5px;
+        margin-right: 1px;
         z-index: 2;
 
         &:hover {
@@ -58,12 +58,14 @@ header {
             top: 0;
             left: 0;
             transform: rotate(45deg);
+            background-color: #003870;
         }
 
         &.active .hamburger::after {
             top: 0;
             left: 0;
             transform: rotate(135deg);
+            background-color: #003870;
         }
 
         .hamburger {
@@ -155,7 +157,7 @@ header {
             }
 
             ul {
-                width: calc(100% - 65px);
+                width: calc(100% - 66px);
                 height: 100%;
                 display: flex;
                 list-style: none;
@@ -166,15 +168,23 @@ header {
                     align-items: center;
                     flex-grow: 1;
                     text-transform: uppercase;
-                    font-size: 14px;
+                    font-size: 15px;
                     height: 100%;
                     line-height: 100%;
                     font-weight: bold;
-                    color: #003870;
+
+                    @media (min-width: 375px) {
+                        font-size: 18px;
+                    }
 
                     &:hover {
                         background-color: rgba(0, 0, 0, 0.2);
                         cursor: pointer;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #003870;
                     }
                 }
             }
@@ -184,7 +194,7 @@ header {
 }
 
 .main {
-    height: 80vh;
+    height: 85vh;
     position: relative;
 
     .container {
@@ -206,6 +216,7 @@ header {
             font-size: 2em;
             text-align-last: center;
             color: #edf5e1;
+            text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
         }
 
         p {
