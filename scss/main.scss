@@ -229,42 +229,54 @@ header {
 
 .skills {
     height: 100vh;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    background-color: #dedfe0;
 
-    .container {
+    h1 {
+        text-transform: uppercase;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .logos {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 80%;
-        height: 95%;
+        width: 40%;
+        height: 20%;
+        border-radius: 5px;
         border: 1px solid black;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
 
-        h1 {
-            text-transform: uppercase;
+        img {
+            width: 100%;
+            height: 70%;
+            display: block;
+            margin: 10px auto 0 auto;
         }
 
-        .myskills {
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            align-content: space-around;
-            flex-wrap: wrap;
-            flex-grow: 1;
+        p {
+            text-align: center;
+        }
 
-            .logos {
-                width: 40%;
-                height: 20%;
-                border: 1px solid black;
+        &:nth-of-type(2) {
+            img {
+                width: 75%;
+            }
+        }
+
+        &:nth-of-type(7) {
+            img {
+                height: 65%;
+                transform: scale(1.2);
             }
         }
     }
 }
+
+
 
 .projects {
     height: 100%;
