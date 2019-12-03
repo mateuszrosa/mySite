@@ -42,11 +42,28 @@ header {
         height: 65px;
         border: none;
         border-radius: 50%;
-        margin-right: 10px;
+        margin-right: 5px;
         z-index: 2;
 
         &:hover {
             background-color: rgba(0, 0, 0, .5);
+        }
+
+        &.active .hamburger {
+            background-color: rgba(0, 0, 0, 0);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+        }
+
+        &.active .hamburger::before {
+            top: 0;
+            left: 0;
+            transform: rotate(45deg);
+        }
+
+        &.active .hamburger::after {
+            top: 0;
+            left: 0;
+            transform: rotate(135deg);
         }
 
         .hamburger {
@@ -59,6 +76,7 @@ header {
             background-color: #5cdb95;
             z-index: 10;
             cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
             &::before,
             &::after {
@@ -69,6 +87,8 @@ header {
                 position: absolute;
                 top: 50%;
                 left: 50%;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                transition: all .3s;
             }
 
             &::before {
@@ -135,7 +155,7 @@ header {
             }
 
             ul {
-                width: calc(100% - 70px);
+                width: calc(100% - 65px);
                 height: 100%;
                 display: flex;
                 list-style: none;
@@ -160,14 +180,6 @@ header {
             }
         }
 
-    }
-}
-
-.nav--open {
-
-    //scale the background circle to full size
-    >.splash::after {
-        transform: scale(1);
     }
 }
 
