@@ -196,6 +196,7 @@ header {
 .main {
     height: 85vh;
     position: relative;
+    box-shadow: 0 0 65px 15px rgba(#000, 0.2);
 
     .container {
         height: 80%;
@@ -233,6 +234,7 @@ header {
     align-content: space-around;
     flex-wrap: wrap;
     background-color: #dedfe0;
+    box-shadow: 0 0 65px 15px rgba(#000, 0.2);
 
     h1 {
         text-transform: uppercase;
