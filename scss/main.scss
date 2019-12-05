@@ -231,9 +231,6 @@ header {
     align-items: center;
     flex-direction: column;
 
-    h1 {
-        text-transform: uppercase;
-    }
 
     .container {
         position: relative;
@@ -241,7 +238,7 @@ header {
         width: 85%;
         display: flex;
         justify-content: space-around;
-        align-content: space-around;
+        // align-content: space-around;
         flex-wrap: wrap;
         border-radius: 10px;
         background-color: #dedfe0;
@@ -264,9 +261,15 @@ header {
 
         h1 {
             text-transform: uppercase;
-            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 100%;
-            text-align: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            flex-grow: 1;
+            background-color: #dedfe0;
+            z-index: 1;
         }
 
         .logos {
@@ -287,6 +290,13 @@ header {
                 display: block;
                 margin: 0 auto 0 auto;
             }
+
+            // &:first-of-type,
+            // &:nth-of-type(2) {
+            //     img {
+            //         margin: 10px auto 0 auto;
+            //     }
+            // }
 
             &:nth-of-type(5) {
                 img {
