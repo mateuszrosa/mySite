@@ -333,6 +333,18 @@ header {
                 width: 90%;
                 height: 85%;
                 border: 1px solid #dedfe0;
+
+                @media (min-width: 320px) {
+                    border: 1px solid blue;
+                }
+
+                @media (min-width: 375px) {
+                    border: 1px solid green;
+                }
+
+                @media (min-width: 425px) {
+                    border: 1px solid yellow;
+                }
             }
         }
     }
