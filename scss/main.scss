@@ -350,7 +350,7 @@ header {
                 bottom: 0;
                 background-color: #fff;
                 opacity: 0.6;
-                border: 2px solid black;
+                border: 1px solid black;
 
                 @media (min-width: 1024px) {
                     opacity: 0;
@@ -360,14 +360,37 @@ header {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 45px;
                     height: 100%;
                     color: #000;
                     text-decoration: none;
                     font-weight: bold;
+                    position: relative;
 
-                    &:hover {
-                        background-color: #000;
+                    &:nth-of-type(2) {
+                        margin-left: 5px;
+                    }
+
+                    &.effect-underline:after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        display: inline-block;
+                        height: 1em;
+                        width: 100%;
+                        border-bottom: 2px solid;
+                        margin-top: 10px;
+                        opacity: 0;
+                        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+                        transition: opacity 0.35s, transform 0.35s;
+                        -webkit-transform: scale(0, 1);
+                        transform: scale(0, 1);
+                    }
+
+                    &.effect-underline:hover:after {
+                        opacity: 1;
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
                     }
                 }
             }
