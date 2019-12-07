@@ -343,8 +343,9 @@ header {
                 height: 20%;
                 position: absolute;
                 bottom: 0;
-                background-color: #aaa;
+                background-color: #fff;
                 opacity: 0.6;
+                border: 2px solid black;
 
                 @media (min-width: 1024px) {
                     opacity: 0;
