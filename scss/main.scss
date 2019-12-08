@@ -291,6 +291,12 @@ header {
                 height: 60%;
                 display: block;
             }
+
+            &:nth-of-type(9) img {
+                height: 50%;
+                width: 65%;
+
+            }
         }
     }
 }
