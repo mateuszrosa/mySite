@@ -47,6 +47,7 @@ header {
 
         &:hover {
             background-color: rgba(0, 0, 0, .5);
+            transform: scale(1.05);
         }
 
         &.active .hamburger {
@@ -304,7 +305,6 @@ header {
 
 
 .project {
-    height: 100vh;
     border-bottom: 3px solid black;
     display: flex;
     flex-direction: column;
@@ -327,7 +327,7 @@ header {
 
         .projects {
             width: 90%;
-            height: 200px;
+            height: 220px;
             position: relative;
             overflow: hidden;
             border-radius: 5px;
