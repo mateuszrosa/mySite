@@ -347,6 +347,10 @@ header {
                 transform: scale(1.05);
             }
 
+            &:nth-of-type(2) h2 {
+                color: #bfb8b8;
+            }
+
             h2 {
                 position: absolute;
                 font-size: 20px;
