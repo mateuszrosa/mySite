@@ -444,7 +444,16 @@ header {
 
                 input {
                     height: 20px;
+                    border-radius: 5px;
                 }
+
+                textarea {
+                    border-radius: 5px;
+                }
+            }
+
+            button {
+                border-radius: 5px;
             }
         }
     }
