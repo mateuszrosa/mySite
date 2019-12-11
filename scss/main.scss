@@ -447,12 +447,21 @@ header {
                 flex-direction: column;
 
                 input {
-                    height: 20px;
-                    border-radius: 5px;
+                    width: 100%;
+                    padding: 6px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
                 }
 
                 textarea {
-                    border-radius: 5px;
+                    width: 100%;
+                    height: 150px;
+                    padding: 6px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    resize: vertical;
                 }
             }
 
@@ -460,6 +469,8 @@ header {
                 margin-top: 5px;
                 width: 100px;
                 border-radius: 5px;
+                border: none;
+                background-color: #EAF6DE;
             }
         }
     }
