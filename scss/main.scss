@@ -423,6 +423,7 @@ header {
 .contact {
     width: 100%;
     height: 100%;
+    color: #003870;
 
     h1 {
         text-align: center;
@@ -435,8 +436,10 @@ header {
         width: 80%;
         height: 100%;
         margin: 0 auto;
-        border: 1px solid black;
+        background-color: #dedfe0;
         padding: 30px 20px;
+        border-radius: 5px;
+        margin-bottom: 10px;
 
         label {
             width: 100%;
@@ -479,6 +482,7 @@ header {
                 border: none;
                 background-color: #EAF6DE;
                 cursor: pointer;
+                font-weight: bold;
             }
         }
     }
