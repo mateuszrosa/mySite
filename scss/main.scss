@@ -466,12 +466,18 @@ header {
             }
 
             input[type="submit"] {
-                margin-top: 5px;
+                margin-top: 10px;
                 width: 100px;
+                height: 30px;
                 border-radius: 5px;
                 border: none;
                 background-color: #EAF6DE;
                 cursor: pointer;
+                transition: margin-top .1s linear;
+
+                &:hover {
+                    margin-top: 7px;
+                }
             }
         }
     }
