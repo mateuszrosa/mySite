@@ -225,6 +225,19 @@ header {
 
 }
 
+.about {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .container {
+        height: 80%;
+        width: 90%;
+        background-color: gray;
+    }
+}
+
 .skills {
     height: 100vh;
     display: flex;
@@ -302,10 +315,7 @@ header {
     }
 }
 
-
-
 .project {
-    border-bottom: 3px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
