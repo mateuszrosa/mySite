@@ -236,7 +236,27 @@ header {
     .container {
         height: 80%;
         width: 90%;
-        background-color: gray;
+        padding: 10px;
+        background-color: #EAF6DE;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .image {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: gray;
+
+            img {
+                display: block;
+                width: 80%;
+                height: 100%;
+                margin: 0 auto;
+            }
+        }
     }
 }
 
