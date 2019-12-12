@@ -121,18 +121,12 @@
       <h1>Contact me</h1>
       <div class="container">
         <form action="https://formspree.io/mateusz.rosa@gmail.com" method="POST">
-          <label>
-            Your email:
-            <input type="email" name="_replyto" placeholder="name@email.com" required />
-          </label>
-          <label>
-            Your name:
-            <input type="text" name="name" placeholder="John Smith" required>
-          </label>
-          <label>
-            Your message:
-            <textarea name="message" placeholder="Write text" required></textarea>
-          </label>
+          <label for="email">Your email:</label>
+          <input type="email" name="_replyto" placeholder="name@email.com" id="email" required />
+          <label for="name">Your name:</label>
+          <input type="text" name="name" placeholder="John Smith" id="name" required>
+          <label for="message">Your message:</label>
+          <textarea name="message" placeholder="Write text" id="message" required></textarea>
           <input type="submit" value="Submit" />
         </form>
       </div>
