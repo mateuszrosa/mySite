@@ -416,7 +416,8 @@ header {
                 position: absolute;
                 bottom: 0;
                 background-color: #c5c5b0;
-                opacity: 0.6;
+                opacity: 1;
+                transition: .3s linear;
 
                 @media (min-width: 1024px) {
                     opacity: 0;
