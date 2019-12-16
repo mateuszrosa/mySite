@@ -183,6 +183,10 @@ header {
                     padding: 2px;
 
                     @media (min-width: 375px) {
+                        font-size: 15px;
+                    }
+
+                    @media (min-width: 425px) {
                         font-size: 18px;
                     }
 
@@ -295,11 +299,6 @@ header {
                 background-color: #c3b8b8;
                 position: absolute;
                 top: 0;
-            }
-
-            p {
-                width: 100%;
-                display: block;
             }
 
             .img {
