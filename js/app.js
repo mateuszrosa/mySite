@@ -11,12 +11,11 @@ bar.addEventListener("click", () => {
 
 window.addEventListener("scroll", () => {
   if (window.pageYOffset >= header.clientHeight && flag) {
-    console.log("object");
-    icon.style.background = "white";
+    icon.querySelector(".hamburger").classList.add("test");
     flag = false;
     return;
   } else if (window.pageYOffset <= header.clientHeight && !flag) {
-    icon.style.background = "none";
+    icon.querySelector(".hamburger").classList.remove("test");
     flag = true;
   }
 });
