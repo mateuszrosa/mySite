@@ -242,6 +242,10 @@ header {
         background-repeat: no-repeat;
         background-position: 50% 30%;
 
+        @media (min-width: 768px) {
+            background-size: 70% 60%;
+        }
+
         h1 {
             font-size: 2em;
             text-align-last: center;
