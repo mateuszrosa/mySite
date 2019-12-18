@@ -97,6 +97,15 @@ header {
                 }
             }
 
+            &.test1 {
+                background-color: #EAF6DE;
+
+                &::before,
+                &::after {
+                    background-color: #379683;
+                }
+            }
+
             &::before,
             &::after {
                 content: "";
