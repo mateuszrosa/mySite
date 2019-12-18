@@ -9,8 +9,10 @@ bar.addEventListener("click", () => {
   ul.classList.toggle("show");
   icon.classList.toggle("active");
   if (ul.classList.contains("show")) {
+    console.log("remove");
     hamburger.classList.remove("test");
-  } else {
+  } else if (window.pageYOffset >= header.clientHeight) {
+    console.log("add");
     hamburger.classList.add("test");
   }
 });
