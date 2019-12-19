@@ -477,6 +477,10 @@ header {
     h1 {
         width: 100%;
         text-align: center;
+
+        @media (min-width: 768px) {
+            font-size: 30px;
+        }
     }
 
     .container {
@@ -487,6 +491,12 @@ header {
         align-items: center;
         justify-content: space-around;
 
+        @media (min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 500px;
+        }
+
         .projects {
             width: 90%;
             height: 220px;
@@ -495,6 +505,10 @@ header {
             border-radius: 5px;
             display: flex;
             justify-content: center;
+
+            @media (min-width: 768px) {
+                width: 45%;
+            }
 
             &:hover>.links {
                 opacity: 1;
