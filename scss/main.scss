@@ -142,46 +142,10 @@ header {
         height: 15vh;
         z-index: 5;
 
-        &.desktop {
-            display: none;
-            margin-right: 20px;
-
-            @media (min-width: 768px) {
-                display: none;
-            }
-
-            ul {
-                display: flex;
-                list-style: none;
-                padding: 0;
-                height: 0;
-                overflow: hidden;
-                font-size: 2em;
-                line-height: 100px;
-
-                @media (min-width: 768px) {
-                    height: 100%;
-                }
-
-                li {
-                    margin-left: 50px;
-                    font-weight: bold;
-
-                    &:first-of-type {
-                        margin-left: 0;
-                    }
-                }
-            }
-        }
-
         &.mobile {
             overflow: hidden;
             transition: all .5s linear;
             background-color: #EAF6DE;
-
-            @media (min-width: 768px) {
-                display: none;
-            }
 
             ul {
                 width: calc(100% - 56px);
