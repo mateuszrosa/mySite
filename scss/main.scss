@@ -210,6 +210,10 @@ header {
             background-size: 60% 60%;
         }
 
+        @media (min-width: 1024px) {
+            background-size: 50% 65%;
+        }
+
         h1 {
             font-size: 2em;
             text-align-last: center;
@@ -243,6 +247,11 @@ header {
 
         @media (min-width: 768px) {
             width: 70%;
+            height: 90%;
+        }
+
+        @media (min-width: 768px) {
+            width: 60%;
             height: 90%;
         }
 
@@ -355,6 +364,10 @@ header {
 
         @media (min-width: 768px) {
             width: 70%;
+        }
+
+        @media (min-width: 1024px) {
+            width: 60%;
         }
 
         &::before {
