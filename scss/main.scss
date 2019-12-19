@@ -243,7 +243,7 @@ header {
         background-position: 50% 30%;
 
         @media (min-width: 768px) {
-            background-size: 70% 60%;
+            background-size: 60% 60%;
         }
 
         h1 {
@@ -277,6 +277,11 @@ header {
         flex-direction: column;
         align-items: center;
 
+        @media (min-width: 768px) {
+            width: 70%;
+            height: 90%;
+        }
+
         .me {
             display: flex;
             flex-direction: column;
@@ -305,6 +310,12 @@ header {
                 span {
                     font-weight: bold;
                 }
+            }
+        }
+
+        h4 {
+            @media (min-width: 768px) {
+                font-size: 20px;
             }
         }
 
@@ -343,6 +354,11 @@ header {
                         width: 125px;
                         height: 125px;
                     }
+
+                    @media (min-width: 768px) {
+                        width: 100px;
+                        height: 100px;
+                    }
                 }
             }
 
@@ -368,6 +384,10 @@ header {
         border-radius: 10px;
         background-color: #dedfe0;
         box-shadow: 0 0 65px 15px rgba(#000, 0.2);
+
+        @media (min-width: 768px) {
+            width: 70%;
+        }
 
         &::before {
             content: '';
