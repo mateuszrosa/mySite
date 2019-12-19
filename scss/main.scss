@@ -478,6 +478,10 @@ header {
                 width: 45%;
             }
 
+            @media (min-width: 1024px) {
+                width: 37%;
+            }
+
             &:hover>.links {
                 opacity: 1;
             }
