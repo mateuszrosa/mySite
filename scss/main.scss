@@ -441,6 +441,12 @@ header {
                     height: 60%;
                     margin-bottom: 10px;
                 }
+
+                @media (min-width: 768px) {
+                    width: 40%;
+                    height: 55%;
+                    margin-bottom: 0;
+                }
             }
 
             &:nth-of-type(9) img {
@@ -450,6 +456,11 @@ header {
                 @media (min-width: 375px) {
                     width: 60%;
                     height: 50%;
+                }
+
+                @media (min-width: 768px) {
+                    width: 40%;
+                    height: 55%;
                 }
             }
         }
