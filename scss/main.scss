@@ -619,6 +619,10 @@ header {
         border-radius: 5px;
         box-shadow: 0 0 35px 5px rgba(0, 0, 0, 0.2);
 
+        @media (min-width: 768px) {
+            width: 50%;
+        }
+
         label {
             width: 100%;
             text-align: left;
