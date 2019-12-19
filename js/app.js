@@ -5,6 +5,10 @@ const hamburger = document.querySelector(".hamburger");
 const header = document.querySelector("header");
 let flag;
 
+if (window.pageYOffset >= header.clientHeight) {
+  hamburger.classList.add("test");
+}
+
 bar.addEventListener("click", () => {
   ul.classList.toggle("show");
   icon.classList.toggle("active");
