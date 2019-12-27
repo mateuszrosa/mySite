@@ -268,7 +268,7 @@ header {
             height: 90%;
         }
 
-        @media (min-width: 1440px) {
+        @media (min-width: 1024px) {
             width: 50%;
             height: 100%;
         }
@@ -382,7 +382,7 @@ header {
         }
 
         @media (min-width: 1024px) {
-            width: 60%;
+            width: 50%;
         }
 
         &::before {
@@ -469,6 +469,7 @@ header {
     justify-content: center;
     position: relative;
     text-transform: uppercase;
+    align-items: center;
 
     h1 {
         width: 100%;
@@ -491,6 +492,10 @@ header {
             flex-direction: row;
             flex-wrap: wrap;
             height: 500px;
+        }
+
+        @media (min-width: 1024px) {
+            width: 90%;
         }
 
         .projects {
