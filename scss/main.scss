@@ -251,7 +251,7 @@ header {
         height: 100%;
         width: 85%;
         margin-top: 20px;
-        background-color: #EAF6DE;
+        background-color: #dedfe0;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -367,7 +367,7 @@ header {
 
     .container {
         position: relative;
-        height: 500px;
+        height: 80%;
         width: 85%;
         display: flex;
         justify-content: space-around;
@@ -375,6 +375,10 @@ header {
         border-radius: 10px;
         background-color: #dedfe0;
         box-shadow: 0 0 65px 15px rgba(#000, 0.2);
+
+        @media (min-width: 425px) {
+            height: 600px;
+        }
 
         @media (min-width: 768px) {
             width: 60%;
@@ -439,8 +443,8 @@ header {
                 }
 
                 @media (min-width: 768px) {
-                    width: 40%;
-                    height: 55%;
+                    width: 50%;
+                    height: 60%;
                     margin-bottom: 0;
                 }
             }
@@ -455,8 +459,8 @@ header {
                 }
 
                 @media (min-width: 768px) {
-                    width: 40%;
-                    height: 55%;
+                    width: 45%;
+                    height: 60%;
                 }
             }
         }
