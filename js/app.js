@@ -21,14 +21,14 @@ bar.addEventListener("click", () => {
 
 window.addEventListener("scroll", () => {
   if (
-    window.pageYOffset >= header.clientHeight &&
+    window.pageYOffset >= header.clientHeight / 2 &&
     flag &&
     !ul.classList.contains("show")
   ) {
     hamburger.classList.add("test");
     flag = false;
     return;
-  } else if (window.pageYOffset <= header.clientHeight && !flag) {
+  } else if (window.pageYOffset <= header.clientHeight / 2 && !flag) {
     hamburger.classList.remove("test");
     flag = true;
   }
