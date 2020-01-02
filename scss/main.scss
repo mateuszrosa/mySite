@@ -434,6 +434,10 @@ header {
             border-top-right-radius: 10px;
             background-color: #dedfe0;
             z-index: 1;
+
+            @media (min-width: 1440px) {
+                font-size: 45px;
+            }
         }
 
         .logos {
@@ -448,6 +452,10 @@ header {
             p {
                 text-transform: uppercase;
                 font-weight: bold;
+
+                @media (min-width: 1440px) {
+                    font-size: 25px;
+                }
             }
 
             img {
@@ -471,6 +479,10 @@ header {
                     height: 60%;
                     margin-bottom: 0;
                 }
+
+                @media (min-width: 1440px) {
+                    width: 30%;
+                }
             }
 
             &:nth-of-type(9) img {
@@ -484,6 +496,11 @@ header {
 
                 @media (min-width: 768px) {
                     width: 45%;
+                    height: 60%;
+                }
+
+                @media (min-width: 1440px) {
+                    width: 27%;
                     height: 60%;
                 }
             }
@@ -505,6 +522,10 @@ header {
 
         @media (min-width: 768px) {
             font-size: 30px;
+        }
+
+        @media (min-width: 1440px) {
+            font-size: 50px;
         }
     }
 
