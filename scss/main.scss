@@ -548,7 +548,8 @@ header {
         }
 
         @media (min-width: 1440px) {
-            width: 65%;
+            width: 80%;
+            height: 700px;
         }
 
         .projects {
@@ -569,7 +570,8 @@ header {
             }
 
             @media (min-width: 1440px) {
-                width: 34%;
+                width: 35%;
+                height: 300px;
             }
 
             &:hover>.links {
