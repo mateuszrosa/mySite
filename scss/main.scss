@@ -560,6 +560,7 @@ header {
             border-radius: 5px;
             display: flex;
             justify-content: center;
+            border: 1px solid black;
 
             @media (min-width: 768px) {
                 width: 45%;
@@ -666,6 +667,15 @@ header {
     height: 100%;
     color: #003870;
     padding: 20px 0;
+    background: linear-gradient(#dedfe0), url(../images/email-pattern.png);
+    background-blend-mode: multiply;
+
+    @media (min-width: 1024px) {
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
     h1 {
         text-align: center;
@@ -685,6 +695,10 @@ header {
 
         @media (min-width: 768px) {
             width: 60%;
+        }
+
+        @media (min-width: 1024px) {
+            height: auto;
         }
 
         @media (min-width: 1440px) {
