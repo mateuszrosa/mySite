@@ -42,6 +42,11 @@ header {
         height: 80px;
         margin: 5px;
 
+        @media (min-width: 1024px) {
+            width: 100px;
+            height: 100px;
+        }
+
         @media (min-width: 1440px) {
             width: 110px;
             height: 110px;
@@ -56,6 +61,11 @@ header {
         border-radius: 50%;
         right: 1px;
         z-index: 6;
+
+        @media (min-width: 1024px) {
+            width: 70px;
+            height: 70px;
+        }
 
         @media (min-width: 1440px) {
             width: 80px;
@@ -98,6 +108,11 @@ header {
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             transition: all .3s;
 
+            @media (min-width: 1024px) {
+                width: 50px;
+                height: 10px;
+            }
+
             @media (min-width: 1440px) {
                 width: 60px;
                 height: 12px;
@@ -132,6 +147,11 @@ header {
                 left: 50%;
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
                 transition: all .3s;
+
+                @media (min-width: 1024px) {
+                    width: 50px;
+                    height: 10px;
+                }
 
                 @media (min-width: 1440px) {
                     width: 60px;
@@ -193,6 +213,14 @@ header {
                         font-size: 18px;
                     }
 
+                    @media (min-width: 1024px) {
+                        font-size: 30px;
+                    }
+
+                    @media (min-width: 1440px) {
+                        font-size: 35px;
+                    }
+
                     &:hover {
                         background-color: rgba(0, 0, 0, 0.2);
                         cursor: pointer;
@@ -244,7 +272,7 @@ header {
             color: #edf5e1;
             text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
 
-            @media (min-width: 1440px) {
+            @media (min-width: 1024px) {
                 font-size: 4em;
             }
         }
@@ -706,6 +734,10 @@ header {
     h1 {
         text-align: center;
         font-size: 30px;
+    }
+
+    p {
+        text-align: center;
     }
 
     .container {
