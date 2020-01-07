@@ -800,15 +800,6 @@ header {
         justify-content: center;
     }
 
-    h1 {
-        text-align: center;
-        font-size: 30px;
-    }
-
-    p {
-        text-align: center;
-    }
-
     .container {
         position: absolute;
         top: 50%;
@@ -817,7 +808,7 @@ header {
         display: flex;
         justify-content: center;
         width: 80%;
-        height: 50%;
+        height: 70%;
         margin: 0 auto;
         background-color: #dedfe0;
         padding: 30px 20px;
@@ -846,6 +837,22 @@ header {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
+
+            h1 {
+                width: 100%;
+                text-align: center;
+                font-size: 30px;
+            }
+
+            p {
+                text-align: center;
+                margin-bottom: 30px;
+
+                a {
+                    text-decoration: none;
+                    color: #003870;
+                }
+            }
 
 
             input {
