@@ -8,7 +8,7 @@ const loader = document.querySelector("#loader-wrapper");
 
 setTimeout(() => {
   loader.style.display = "none";
-}, 2000);
+}, 1500);
 
 if (window.pageYOffset >= header.clientHeight) {
   hamburger.classList.add("test");
