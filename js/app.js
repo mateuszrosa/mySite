@@ -4,19 +4,26 @@ const icon = document.querySelector(".icon");
 const hamburger = document.querySelector(".hamburger");
 const header = document.querySelector("header");
 const about = document.querySelector(".about");
+const aboutContainer = about.querySelector(".container");
 let flag;
 
 if (window.pageYOffset >= header.clientHeight) {
   hamburger.classList.add("test");
 }
 
-console.log(about.getBoundingClientRect().top);
+if (
+  about.getBoundingClientRect().top <= 200 &&
+  !aboutContainer.classList.contains("slide-right")
+) {
+  aboutContainer.classList.add("slide-right");
+}
 
 window.addEventListener("scroll", () => {
-  if (about.getBoundingClientRect().top <= 400) {
-    console.log(window.pageYOffset, about.getBoundingClientRect().top);
-    console.log("about");
-    about.querySelector(".container").classList.add("slide-right");
+  if (
+    about.getBoundingClientRect().top <= 200 &&
+    !aboutContainer.classList.contains("slide-right")
+  ) {
+    aboutContainer.classList.add("slide-right");
   }
 });
 
