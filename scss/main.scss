@@ -1,7 +1,7 @@
 @keyframes slideLeft {
     from {
-        transform: translate(40%, -75%);
         opacity: 0;
+        transform: translate(40%, -75%);
     }
 
     to {
@@ -316,7 +316,7 @@ header {
             @media (min-width: 768px) {
                 width: 70%;
                 height: 70%;
-                transform: translate(-50%, -50%);
+                top: 70%;
             }
 
             @media (min-width: 1024px) {
