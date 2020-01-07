@@ -368,7 +368,7 @@ header {
 
     .container {
         opacity: 0;
-        height: 70%;
+        height: 80%;
         width: 85%;
         margin-top: 20px;
         background-color: #dedfe0;
@@ -439,6 +439,9 @@ header {
         }
 
         h4 {
+            width: 100%;
+            text-align: center;
+
             @media (min-width: 768px) {
                 font-size: 20px;
             }
