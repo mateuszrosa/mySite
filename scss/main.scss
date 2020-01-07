@@ -1,12 +1,22 @@
-@keyframes slideUp {
+@keyframes slideLeft {
     from {
-        background-position: 100% 25%;
+        transform: translate(40%, -75%);
         opacity: 0;
     }
 
     to {
-        background-position: 50% 25%;
         opacity: 1;
+        transform: translate(-50%, -75%);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        text-align: left;
+    }
+
+    to {
+        text-align: center;
     }
 }
 
@@ -252,10 +262,11 @@ header {
 .main {
     height: 85vh;
     position: relative;
+    overflow-x: hidden;
 
     .container {
         height: 80%;
-        width: 80%;
+        width: 100%;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -264,9 +275,15 @@ header {
 
         h1 {
             font-size: 2em;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
             text-align-last: center;
             color: #edf5e1;
             text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+            animation: slideRight 2s;
 
             @media (min-width: 1024px) {
                 font-size: 4em;
@@ -274,6 +291,11 @@ header {
         }
 
         p {
+            width: 100%;
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             text-align-last: center;
             color: #379683;
 
@@ -284,15 +306,17 @@ header {
 
         img {
             width: 100%;
-            height: 50%;
+            height: 45%;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -75%);
+            animation: slideLeft 2s;
 
             @media (min-width: 768px) {
                 width: 70%;
                 height: 70%;
+                transform: translate(-50%, -50%);
             }
 
             @media (min-width: 1024px) {
