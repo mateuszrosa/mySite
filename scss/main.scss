@@ -24,7 +24,7 @@
 
 @keyframes show {
     from {
-        opacity: 0;
+        opacity: .5;
     }
 
     to {
@@ -363,11 +363,11 @@ header {
     align-items: center;
 
     .slide-right {
-        animation: show 2.5s forwards;
+        animation: show 1.5s forwards;
     }
 
     .container {
-        opacity: 0;
+        opacity: .5;
         height: 80%;
         width: 85%;
         margin-top: 20px;
