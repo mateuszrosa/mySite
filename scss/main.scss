@@ -373,7 +373,6 @@ header {
     }
 
     .container {
-        height: 80%;
         width: 85%;
         margin-top: 135px;
         background-color: #dedfe0;
@@ -385,12 +384,10 @@ header {
 
         @media (min-width: 768px) {
             width: 60%;
-            height: 80%;
         }
 
         @media (min-width: 1024px) {
             width: 50%;
-            height: 100%;
         }
 
         @media (min-width: 1440px) {
@@ -513,7 +510,7 @@ header {
 
     .container {
         position: relative;
-        height: 80%;
+        height: 60%;
         width: 85%;
         margin-top: 135px;
         display: flex;
