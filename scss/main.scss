@@ -24,11 +24,13 @@
 
 @keyframes show {
     from {
-        opacity: .5;
+        opacity: 0;
+        transform: translateY(-2rem);
     }
 
     to {
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -367,7 +369,6 @@ header {
     }
 
     .container {
-        opacity: .5;
         height: 80%;
         width: 85%;
         margin-top: 20px;
@@ -426,7 +427,8 @@ header {
             }
 
             p {
-                margin-top: 10px;
+                margin-top: 20px;
+                opacity: .5;
 
                 @media (min-width: 1440px) {
                     font-size: 22px;
