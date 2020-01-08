@@ -231,8 +231,6 @@ header {
 
                 li {
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
                     flex-basis: 0;
                     flex-grow: 1;
                     text-transform: uppercase;
@@ -265,6 +263,11 @@ header {
                     a {
                         text-decoration: none;
                         color: #003870;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
                     }
                 }
             }
