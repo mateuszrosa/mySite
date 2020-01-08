@@ -58,7 +58,7 @@ body {
 header {
     display: flex;
     width: 100%;
-    height: 15vh;
+    height: 130px;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -215,7 +215,7 @@ header {
         left: 100%;
         color: #5cdb95;
         width: 100%;
-        height: 15vh;
+        height: 130px;
         z-index: 5;
 
         &.mobile {
@@ -371,7 +371,7 @@ header {
     .container {
         height: 80%;
         width: 85%;
-        margin-top: 20px;
+        margin-top: 135px;
         background-color: #dedfe0;
         border-radius: 5px;
         display: flex;
@@ -511,6 +511,7 @@ header {
         position: relative;
         height: 80%;
         width: 85%;
+        margin-top: 135px;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -645,6 +646,7 @@ header {
     h1 {
         width: 100%;
         text-align: center;
+        margin-top: 130px;
 
         @media (min-width: 768px) {
             font-size: 30px;
