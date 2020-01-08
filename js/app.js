@@ -13,17 +13,17 @@ if (window.pageYOffset >= header.clientHeight) {
 
 if (
   about.getBoundingClientRect().top <= 200 &&
-  !aboutContainerText.classList.contains("slide-right")
+  !aboutContainerText.classList.contains("showText")
 ) {
-  aboutContainerText.classList.add("slide-right");
+  aboutContainerText.classList.add("showText");
 }
 
 window.addEventListener("scroll", () => {
   if (
-    about.getBoundingClientRect().top <= 200 &&
-    !aboutContainer.classList.contains("slide-right")
+    about.getBoundingClientRect().top <= 100 &&
+    !aboutContainerText.classList.contains("showText")
   ) {
-    aboutContainer.classList.add("slide-right");
+    aboutContainerText.classList.add("showText");
   }
 });
 
