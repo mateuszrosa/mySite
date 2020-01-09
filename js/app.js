@@ -34,6 +34,11 @@ window.addEventListener("scroll", () => {
     !aboutContainerText.classList.contains("showText")
   ) {
     aboutContainerText.classList.add("showText");
+    images[0].classList.add("slideRightImg");
+    images[2].classList.add("slideRightImgLate");
+
+    images[1].classList.add("slideLeftImg");
+    images[3].classList.add("slideLeftImgLate");
   }
 });
 

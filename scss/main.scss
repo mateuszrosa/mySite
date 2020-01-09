@@ -250,8 +250,12 @@ header {
         left: 100%;
         color: #5cdb95;
         width: 100%;
-        height: 130px;
+        height: 110px;
         z-index: 5;
+
+        @media (min-width: 768px) {
+            height: 130px;
+        }
 
         &.mobile {
             overflow: hidden;
