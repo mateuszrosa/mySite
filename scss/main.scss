@@ -69,7 +69,7 @@
 }
 
 .showImg {
-    animation: show 3s .5s forwards;
+    animation: show 3s forwards;
 }
 
 .slideRightImg {
@@ -80,12 +80,20 @@
     animation: slideRightImg 2s 1.5s forwards;
 }
 
+.slideRightImgLateLater {
+    animation: slideRightImg 2s 2.5s forwards;
+}
+
 .slideLeftImg {
     animation: slideLeftImg 2s .5s forwards;
 }
 
 .slideLeftImgLate {
     animation: slideLeftImg 2s 1.5s forwards;
+}
+
+.slideLeftImgLateLater {
+    animation: slideLeftImg 2s 2.5s forwards;
 }
 
 * {
@@ -600,6 +608,7 @@ header {
         border-radius: 10px;
         background-color: #dedfe0;
         box-shadow: 0 0 65px 15px rgba(#000, 0.2);
+        overflow: hidden;
 
         @media (min-width: 425px) {
             height: 600px;
@@ -688,6 +697,18 @@ header {
                 @media (min-width: 1440px) {
                     width: 30%;
                 }
+            }
+
+            &:nth-of-type(2) img,
+            &:nth-of-type(5) img,
+            &:nth-of-type(8) img {
+                transform: translateX(-215%);
+            }
+
+            &:nth-of-type(3) img,
+            &:nth-of-type(6) img,
+            &:nth-of-type(9) img {
+                transform: translateX(215%);
             }
 
             &:nth-of-type(9) img {

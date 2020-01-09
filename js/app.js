@@ -8,6 +8,7 @@ const aboutContainerText = about.querySelector(".container p");
 const images = document.querySelectorAll(".img a img");
 const photo = document.querySelector(".about .me .image");
 const logos = document.querySelectorAll(".logos img");
+const skills = document.querySelector(".skills");
 let flag;
 
 if (window.pageYOffset >= header.clientHeight) {
@@ -44,6 +45,17 @@ window.addEventListener("scroll", () => {
     images[3].classList.add("slideLeftImgLate");
 
     photo.classList.add("showImg");
+  } else if (
+    skills.getBoundingClientRect().top <= 100 &&
+    !logos[0].classList.contains("slideRightImg")
+  ) {
+    logos[0].classList.add("slideRightImg");
+    logos[2].classList.add("slideRightImgLate");
+    logos[4].classList.add("slideRightImgLateLater");
+
+    logos[1].classList.add("slideLeftImg");
+    logos[3].classList.add("slideLeftImgLate");
+    logos[5].classList.add("slideLeftImgLateLater");
   }
 });
 
