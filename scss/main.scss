@@ -445,14 +445,14 @@ header {
                 box-shadow: 0 0 35px 5px rgba(0, 0, 0, 0.2);
 
                 @media (min-width: 1440px) {
-                    width: 180px;
-                    height: 180px;
+                    width: 200px;
+                    height: 200px;
                 }
 
                 img {
                     display: block;
-                    width: 100px;
-                    height: 140px;
+                    width: 80%;
+                    height: 100%;
                     margin: 0 auto;
                 }
             }
