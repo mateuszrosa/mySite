@@ -21,8 +21,11 @@ if (
   images.forEach(img => {
     img.classList.add("showImg");
   });
-  images[0].classList.add("slideImg");
-  images[2].classList.add("slideImg");
+  images[0].classList.add("slideRightImg");
+  images[2].classList.add("slideRightImgLate");
+
+  images[1].classList.add("slideLeftImg");
+  images[3].classList.add("slideLeftImgLate");
 }
 
 window.addEventListener("scroll", () => {
