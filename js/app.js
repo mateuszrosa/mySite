@@ -5,6 +5,8 @@ const hamburger = document.querySelector(".hamburger");
 const header = document.querySelector("header");
 const about = document.querySelector(".about");
 const aboutContainerText = about.querySelector(".container p");
+const images = document.querySelectorAll(".img a img");
+console.log(images);
 let flag;
 
 if (window.pageYOffset >= header.clientHeight) {
@@ -16,6 +18,11 @@ if (
   !aboutContainerText.classList.contains("showText")
 ) {
   aboutContainerText.classList.add("showText");
+  images.forEach(img => {
+    img.classList.add("showImg");
+  });
+  images[0].classList.add("slideImg");
+  images[2].classList.add("slideImg");
 }
 
 window.addEventListener("scroll", () => {

@@ -22,7 +22,7 @@
     }
 }
 
-@keyframes show {
+@keyframes fadeIn {
     from {
         opacity: 0;
         transform: translateY(-2rem);
@@ -31,6 +31,26 @@
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeftImg {
+    from {
+        transform: translateX(-215%);
+    }
+
+    to {
+        transform: translateX(0);
     }
 }
 
@@ -369,7 +389,15 @@ header {
     align-items: center;
 
     .showText {
-        animation: show 1.5s forwards;
+        animation: fadeIn 1.5s forwards;
+    }
+
+    .showImg {
+        animation: show 2.5s forwards;
+    }
+
+    .slideImg {
+        animation: slideLeftImg 2.5s forwards;
     }
 
     .container {
@@ -381,6 +409,7 @@ header {
         flex-direction: column;
         align-items: center;
         box-shadow: 0 0 65px 15px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
 
         @media (min-width: 768px) {
             width: 60%;
@@ -421,8 +450,8 @@ header {
 
                 img {
                     display: block;
-                    width: 80%;
-                    height: 100%;
+                    width: 100px;
+                    height: 140px;
                     margin: 0 auto;
                 }
             }
@@ -461,6 +490,10 @@ header {
             flex-grow: 1;
             position: relative;
 
+            &:first-of-type {
+                background-color: #fff;
+            }
+
             &::before {
                 content: '';
                 width: 1px;
@@ -474,11 +507,13 @@ header {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                flex-grow: 1;
+                width: 50%;
 
                 img {
                     width: 80px;
                     height: 80px;
+                    // opacity: 0;
+                    transform: translateX(0);
 
                     @media (min-width: 375px) {
                         width: 100px;
@@ -496,7 +531,6 @@ header {
                     }
                 }
             }
-
         }
     }
 }
