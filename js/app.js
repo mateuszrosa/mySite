@@ -6,7 +6,8 @@ const header = document.querySelector("header");
 const about = document.querySelector(".about");
 const aboutContainerText = about.querySelector(".container p");
 const images = document.querySelectorAll(".img a img");
-console.log(images);
+const photo = document.querySelector(".about .me .image");
+const logos = document.querySelectorAll(".logos img");
 let flag;
 
 if (window.pageYOffset >= header.clientHeight) {
@@ -26,6 +27,8 @@ if (
 
   images[1].classList.add("slideLeftImg");
   images[3].classList.add("slideLeftImgLate");
+
+  photo.classList.add("showImg");
 }
 
 window.addEventListener("scroll", () => {
@@ -39,6 +42,8 @@ window.addEventListener("scroll", () => {
 
     images[1].classList.add("slideLeftImg");
     images[3].classList.add("slideLeftImgLate");
+
+    photo.classList.add("showImg");
   }
 });
 
