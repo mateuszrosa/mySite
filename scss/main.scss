@@ -73,27 +73,27 @@
 }
 
 .slideRightImg {
-    animation: slideRightImg 2s .5s forwards;
+    animation: slideRightImg 2s forwards;
 }
 
 .slideRightImgLate {
-    animation: slideRightImg 2s 1.5s forwards;
+    animation: slideRightImg 2s 1s forwards;
 }
 
 .slideRightImgLateLater {
-    animation: slideRightImg 2s 2.5s forwards;
+    animation: slideRightImg 2s 2s forwards;
 }
 
 .slideLeftImg {
-    animation: slideLeftImg 2s .5s forwards;
+    animation: slideLeftImg 2s forwards;
 }
 
 .slideLeftImgLate {
-    animation: slideLeftImg 2s 1.5s forwards;
+    animation: slideLeftImg 2s 1s forwards;
 }
 
 .slideLeftImgLateLater {
-    animation: slideLeftImg 2s 2.5s forwards;
+    animation: slideLeftImg 2s 2s forwards;
 }
 
 * {
