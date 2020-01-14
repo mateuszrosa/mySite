@@ -25,7 +25,7 @@
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(-2rem);
+        transform: translateY(-50%);
     }
 
     to {
@@ -47,12 +47,10 @@
 @keyframes slideRightImg {
     from {
         transform: translateX(-215%);
-        opacity: 0;
     }
 
     to {
         transform: translateX(0);
-        opacity: 1;
     }
 }
 
@@ -82,10 +80,6 @@
     animation: slideRightImg 2s 1s forwards;
 }
 
-.slideRightImgLateLater {
-    animation: slideRightImg 2s 2s forwards;
-}
-
 .slideLeftImg {
     animation: slideLeftImg 2s forwards;
 }
@@ -94,8 +88,16 @@
     animation: slideLeftImg 2s 1s forwards;
 }
 
-.slideLeftImgLateLater {
-    animation: slideLeftImg 2s 2s forwards;
+.fadeIn {
+    animation: fadeIn 2s forwards;
+}
+
+.fadeInLate {
+    animation: fadeIn 2s 1s forwards;
+}
+
+.fadeInLater {
+    animation: fadeIn 2s 2s forwards;
 }
 
 * {
@@ -551,7 +553,6 @@ header {
                 justify-content: center;
                 align-items: center;
                 width: 50%;
-                opacity: 0;
 
                 &:nth-of-type(1),
                 &:nth-of-type(3) {
@@ -679,6 +680,7 @@ header {
                 width: 70%;
                 height: 60%;
                 display: block;
+                opacity: 0;
 
                 @media (min-width: 375px) {
                     width: 60%;
@@ -700,18 +702,6 @@ header {
                 @media (min-width: 1440px) {
                     width: 30%;
                 }
-            }
-
-            &:nth-of-type(2) img,
-            &:nth-of-type(5) img,
-            &:nth-of-type(8) img {
-                transform: translateX(-215%);
-            }
-
-            &:nth-of-type(3) img,
-            &:nth-of-type(6) img,
-            &:nth-of-type(9) img {
-                transform: translateX(215%);
             }
 
             &:nth-of-type(9) img {

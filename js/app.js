@@ -49,13 +49,13 @@ window.addEventListener("scroll", () => {
     skills.getBoundingClientRect().top <= 100 &&
     !logos[0].classList.contains("slideRightImg")
   ) {
-    logos[0].classList.add("slideRightImg");
-    logos[2].classList.add("slideRightImgLate");
-    logos[4].classList.add("slideRightImgLateLater");
+    logos[0].classList.add("fadeIn");
+    logos[2].classList.add("fadeInLate");
+    logos[4].classList.add("fadeInLater");
 
-    logos[1].classList.add("slideLeftImg");
-    logos[3].classList.add("slideLeftImgLate");
-    logos[5].classList.add("slideLeftImgLateLater");
+    logos[1].classList.add("fadeIn");
+    logos[3].classList.add("fadeInLate");
+    logos[5].classList.add("fadeInLater");
   }
 });
 
