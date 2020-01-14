@@ -65,7 +65,7 @@
 }
 
 .showText {
-    animation: fadeIn 3s forwards;
+    animation: fadeIn 2s .7s forwards;
 }
 
 .showImg {
@@ -73,19 +73,19 @@
 }
 
 .slideRightImg {
-    animation: slideRightImg 2s forwards;
+    animation: slideRightImg 2s .5s forwards;
 }
 
 .slideRightImgLate {
-    animation: slideRightImg 2s 1s forwards;
+    animation: slideRightImg 2s 1.5s forwards;
 }
 
 .slideLeftImg {
-    animation: slideLeftImg 2s forwards;
+    animation: slideLeftImg 2s .5s forwards;
 }
 
 .slideLeftImgLate {
-    animation: slideLeftImg 2s 1s forwards;
+    animation: slideLeftImg 2s 1.5s forwards;
 }
 
 .fadeIn {
