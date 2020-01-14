@@ -880,6 +880,10 @@ header {
                         transition: opacity 0.35s, transform 0.35s;
                         -webkit-transform: scale(0, 1);
                         transform: scale(0, 1);
+
+                        @media (min-width: 1440px) {
+                            top: 7px;
+                        }
                     }
 
                     &.effect-underline:hover:after {
