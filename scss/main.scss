@@ -65,7 +65,7 @@
 }
 
 .showText {
-    animation: fadeIn 1.5s forwards;
+    animation: fadeIn 3s forwards;
 }
 
 .showImg {
@@ -666,6 +666,7 @@ header {
             align-content: space-between;
             flex-basis: 50%;
             height: 29%;
+            overflow: hidden;
 
             p {
                 text-transform: uppercase;
