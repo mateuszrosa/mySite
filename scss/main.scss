@@ -806,7 +806,7 @@ header {
             }
 
             &:hover>.links {
-                opacity: 1;
+                opacity: .85;
             }
 
             &:hover>a>img {
@@ -846,9 +846,14 @@ header {
                 height: 20%;
                 position: absolute;
                 bottom: 0;
-                background-color: #586666;
+                background-color: #c5c5b0;
                 opacity: 1;
                 transition: .3s linear;
+
+                @media (min-width: 768px) {
+                    background: #586666;
+                    opacity: .75;
+                }
 
                 @media (min-width: 1024px) {
                     opacity: 0;
@@ -864,6 +869,14 @@ header {
                     font-weight: bold;
                     position: relative;
                     margin-left: 5px;
+
+                    @media(min-width: 1024px) {
+                        font-size: 20px;
+                    }
+
+                    @media(min-width: 1440px) {
+                        font-size: 25px;
+                    }
 
                     &.effect-underline:after {
                         content: '';
@@ -882,7 +895,8 @@ header {
                         transform: scale(0, 1);
 
                         @media (min-width: 1440px) {
-                            top: 7px;
+                            height: 33px;
+                            border-bottom: 3px solid;
                         }
                     }
 
