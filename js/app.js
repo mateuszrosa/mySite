@@ -3,12 +3,12 @@ const ul = document.querySelector("nav.mobile");
 const icon = document.querySelector(".icon");
 const hamburger = document.querySelector(".hamburger");
 const header = document.querySelector("header");
-const about = document.querySelector(".about");
+const about = document.querySelector("#about");
 const aboutContainerText = about.querySelector(".container p");
 const images = document.querySelectorAll(".img a img");
 const photo = document.querySelector(".about .me .image");
 const logos = document.querySelectorAll(".logos img");
-const skills = document.querySelector(".skills");
+const skills = document.querySelector("#skills");
 let flag;
 
 if (window.pageYOffset >= header.clientHeight) {
