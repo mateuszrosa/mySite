@@ -475,7 +475,7 @@ header {
             padding: 20px;
 
             @media (min-width: 768px) {
-                height: 60%;
+                height: 70%;
                 padding: 40px;
             }
 
@@ -491,11 +491,12 @@ header {
                 @media (min-width: 1440px) {
                     width: 200px;
                     height: 200px;
+                    ;
                 }
 
                 img {
                     display: block;
-                    width: 80%;
+                    width: 70%;
                     height: 100%;
                     margin: 0 auto;
                 }
@@ -851,11 +852,11 @@ header {
                 transition: .3s linear;
 
                 @media (min-width: 768px) {
-                    background: #586666;
                     opacity: .75;
                 }
 
                 @media (min-width: 1024px) {
+                    background: #586666;
                     opacity: 0;
                 }
 
