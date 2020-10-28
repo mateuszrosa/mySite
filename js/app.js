@@ -56,6 +56,8 @@ window.addEventListener("scroll", () => {
     logos[1].classList.add("fadeIn");
     logos[3].classList.add("fadeInLate");
     logos[5].classList.add("fadeInLater");
+    logos[6].classList.add("fadeInLateLater");
+    logos[7].classList.add("fadeInLateLater");
   }
 });
 

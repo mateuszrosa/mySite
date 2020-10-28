@@ -108,6 +108,10 @@
     animation: fadeIn 2s 2s forwards;
 }
 
+.fadeInLateLater {
+    animation: fadeIn 2s 3s forwards;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -620,7 +624,7 @@ header {
 
     .container {
         position: relative;
-        height: 60%;
+        height: 1200px;
         width: 85%;
         margin-top: 135px;
         display: flex;
@@ -629,15 +633,9 @@ header {
         border-radius: 10px;
         background-color: #dedfe0;
         box-shadow: 0 0 65px 15px rgba(#000, 0.2);
-        overflow: hidden;
-
-        @media (min-width: 425px) {
-            height: 600px;
-        }
 
         @media (min-width: 768px) {
             width: 60%;
-            height: 65%;
         }
 
         @media (min-width: 1024px) {
@@ -682,7 +680,7 @@ header {
             align-items: center;
             align-content: space-between;
             flex-basis: 50%;
-            height: 29%;
+            height: 19%;
             overflow: hidden;
 
             p {
@@ -728,7 +726,7 @@ header {
 
                 @media (min-width: 375px) {
                     width: 60%;
-                    height: 50%;
+                    height: 60%;
                 }
 
                 @media (min-width: 768px) {
