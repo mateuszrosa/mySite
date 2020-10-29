@@ -616,7 +616,6 @@ header {
 }
 
 .skills {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -624,6 +623,7 @@ header {
 
     .container {
         position: relative;
+        height: 900px;
         width: 85%;
         margin-top: 135px;
         display: flex;
